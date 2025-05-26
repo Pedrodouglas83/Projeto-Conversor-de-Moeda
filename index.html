@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Danfo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styls.css">
+    <title>Convert Money</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>CodeClub Convert Money</h1>
+        </header>
+
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option> R$ Real brasilero </option>
+                </select>
+            </label>
+
+            <label>
+                Converter <b>para</b>
+                <select id="currency-select">
+                    <option> US$ Dólar Americano </option>
+                    <option> € euro </option>
+                    <option> Bitcon </option>
+                    <option> Peso </option>
+
+
+                </select>
+            </label>
+            <label>
+                Valor
+                <input id="input-real" placeholder="R$10.0000">
+            </label>
+            <button id="convert-button" type="button">Converter</button>
+            
+              <section>
+                <div class="container-bandeiras">
+                    <img src="./assets/Brasil.png" width="60" alt="bandeira-do-Brasil">
+                    <p class="currency-name">Real</p>
+                    <p class="currency-value" id="real-value">R$10.0000</p>
+                </div>
+                
+                <img class="arrow-img" src="./assets/seta.png" alt="seta">
+                
+                <div  class="container-bandeiras">
+                    <img src="./assets/estados.unidos.png"  width="60" id="currency-img" alt="bandeira-do-usa">
+                    <p class="currency-name" id="currency-name">Dólar Americano</p>
+                    <p class="currency-value" id="currency-dolar"> US$ 10.0000</p>
+                </div>                 
+             </section>
+
+        </main>
+    </div>
+</body>
+ <script src="./scripts.js"></script>
+
+</html>
